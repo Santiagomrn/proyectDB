@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/Esp32/config', function () {
+    return view('ESP32');
+});
+Route::get('/Esp32/{id}','Esp32Controller@show')->name('showEsp32');
+Route::put('/Esp32/{id}','Esp32Controller@update')->name('updateEsp32');
+route::post('Esp32','Esp32Controller@store');
