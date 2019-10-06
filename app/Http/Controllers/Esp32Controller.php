@@ -14,7 +14,11 @@ class Esp32Controller extends Controller
      */
     public function index()
     {
-        //
+        $esp32=Esp32::get(); //obtengo los productos de la base de datos utilizando el modelo
+
+
+        return response()->json($esp32,200); //respondo con un json listando
+
     }
 
     /**

@@ -15,8 +15,9 @@ class CreateEsp32sTable extends Migration
     {
         Schema::create('esp32s', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('status');
             $table->timestamps();
+            $table->integer('status');
+
         });
     }
 
