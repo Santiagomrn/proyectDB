@@ -83,7 +83,7 @@ class Esp32Controller extends Controller
         $esp32=Esp32::findOrFail($id);// busco el producto a actualizar con base a la id
         $esp32->update($request->all());//actualizo el producto
 
-        return response()->json($esp32,200);
+        return $esp32;
     }
 
     /**
