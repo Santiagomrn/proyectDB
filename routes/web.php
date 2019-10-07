@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 Route::get('/Esp32/edit', function () {
     return view('ESP32');
-});
+})->name('Edit');
 
 route::post('/Esp32','Esp32Controller@store')->name('Esp32.store');
 
